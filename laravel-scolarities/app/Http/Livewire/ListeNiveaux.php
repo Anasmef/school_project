@@ -23,12 +23,28 @@ class ListeNiveaux extends Component
 
 
     public function getScolaritieAmount($levelId)
-    {
-        $activeSchoolYear = SchoolYear::where('active', '1')->first();
-        $query = SchoolFees::where('level_id', $levelId)->where('school_year_id', $activeSchoolYear->id)->first();
-
-        return $query->montant;
+{
+    // Vérifier si une année scolaire active existe
+    $activeSchoolYear = SchoolYear::where('active', '1')->first();
+    if (!$activeSchoolYear) {
+        // Gérer le cas où aucune année scolaire active n'est trouvée
+        return null;
     }
+
+    // Rechercher les frais de scolarité pour le niveau spécifié et l'année scolaire active
+    $query = SchoolFees::where('level_id', $levelId)
+                        ->where('school_year_id', $activeSchoolYear->id)
+                        ->first();
+
+    // Vérifier si des frais de scolarité ont été trouvés
+    if ($query) {
+        return $query->montant;
+    } else {
+        // Gérer le cas où aucun frais de scolarité n'est trouvé pour le niveau spécifié et l'année scolaire active
+        return null;
+    }
+}
+
 
     public function render()
     {

@@ -59,7 +59,7 @@
         </div>
 
         <div class="p-5 flex justify-between items-center bg-gray-100">
-            <button class="bg-red-600 p-3 rounded-sm text-white text-sm">Annuler</button>
+            <button class="bg-red-600 p-3 rounded-sm text-white text-sm" type="reset">Annuler</button>
             <button class="bg-green-600 p-3 rounded-sm text-white text-sm" type="submit">Ajouter</button>
         </div>
 

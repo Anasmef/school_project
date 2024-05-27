@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\SchoolYear;
 use Livewire\Component;
 use Livewire\WithPagination;
+// use Algolia\AlgoliaSearch\SearchClient;
 
 class Settings extends Component
 {

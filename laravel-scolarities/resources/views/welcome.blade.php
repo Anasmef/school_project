@@ -18,10 +18,19 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .bck{
+                background-image: url('/images/svg/baground_image.jpg'); /* Chemin vers l'image d'arrière-plan */
+                background-size: cover; /* Adapter l'image à la taille de la div */
+                background-repeat: no-repeat; /* Ne pas répéter l'image */
+                background-position: center; /* Centrer l'image */
+                width: 100%;
+                height: 400px; /* Hauteur de la div */
+                padding: 20px;
+            }
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="bck relative flex items-top justify-center min-h-screen  sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -36,7 +45,7 @@
                 </div>
             @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            {{-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
                         <g clip-path="url(#clip0)" fill="#EF3B2D">
@@ -126,7 +135,7 @@
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </body>
 </html>

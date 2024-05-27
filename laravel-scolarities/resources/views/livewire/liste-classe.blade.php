@@ -52,7 +52,7 @@
                                             {{ $item->level->libelle }}
                                         </td>
                                         <td class="text-sm font-medium text-gray-900 px-6 py-6">
-                                            {{ $item->level->scolarite }} Euro /Dollar
+                                            {{ $item->level->scolarite }} DH
                                         </td>
                                         <td class="flex">
                                             <a href="{{ route('classes.edit', $item->id) }}"

@@ -83,7 +83,12 @@ Route::middleware('auth')->group(function () {
     Route::prefix('parents')->group(function () {
         Route::get('/', [ParentController::class, 'index'])->name('parents');
         Route::get('/create', [ParentController::class, 'create'])->name('parents.create');
+        Route::post('/', [ParentController::class, 'store'])->name('parents.store'); // Modifier cette ligne
+        Route::get('/{parent}/edit', [ParentController::class, 'edit'])->name('parents.edit');
+        Route::put('/{parent}', [ParentController::class, 'update'])->name('parents.update');
+        Route::delete('/{parent}', [ParentController::class, 'destroy'])->name('parents.destroy');
     });
+    
 
 
     Route::prefix('frais')->group(function () {

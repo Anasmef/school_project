@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('levels', function (Blueprint $table) {
-            $table->dropColumn('scolarite');
-            $table->dropColumn('school_year_id');
-        });
+        // Schema::table('levels', function (Blueprint $table) {
+        //     $table->dropColumn('scolarite');
+        //     $table->dropColumn('school_year_id');
+        // });
     }
 
     /**

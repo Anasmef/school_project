@@ -15,7 +15,7 @@ class ParentController extends Controller
 
     public function create()
     {
-        return view('parents.create');
+        return view('parents.create'); 
     }
 
     public function edit(StudentParent $parent)

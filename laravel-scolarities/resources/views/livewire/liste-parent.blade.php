@@ -61,12 +61,12 @@
                                         </td>
 
                                         <td class="flex">
-                                            <a href="{{ route('students.edit', $item->id) }}"
+                                            <a href="{{ route('parents.edit', $item->id) }}"
                                                 class="text-sm bg-blue-500 p-1 text-white rounded-sm">Modifier</a>
                                             <div wire:click="delete({{ $item->id }})"
                                                 class="text-sm bg-red-500 p-1 text-white rounded-sm">Supprimer</div>
                                         </td>
-                                    </tr>
+                                    </tr> 
                                 @empty
                                     <tr class="w-full">
                                         <td class=" flex-1 w-full items-center justify-center" colspan="4">

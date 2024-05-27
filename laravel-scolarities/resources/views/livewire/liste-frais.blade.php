@@ -50,7 +50,7 @@
                                             {{ $item->level->libelle }}
                                         </td>
                                     
-                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->scolarite }}
+                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->level->scolarite }} DH
                                         </td>
                                         <td class="flex">
                                             <a href="{{ route('settings.edit_level', $item->id) }}"
@@ -63,9 +63,7 @@
                                     <tr class="w-full">
                                         <td class=" flex-1 w-full items-center justify-center" colspan="4">
                                             <div>
-                                                <p class="flex justify-center content-center p-4"> <img
-                                                        src="{{ asset('storage/empty.svg') }}" alt=""
-                                                        class="w-20 h-20">
+                                                <p class="flex justify-center content-center p-4"> 
                                                 <div>Aucun élément trouvé!</div>
                                                 </p>
                                             </div>

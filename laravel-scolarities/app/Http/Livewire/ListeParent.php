@@ -17,7 +17,7 @@ class ListeParent extends Component
     public function delete(Family $parent)
     {
         $parent->delete();
-        return redirect()->route('students')->with('success', 'Parent d\'élève supprimé');
+        return redirect()->route('parents')->with('success', 'Parent d\'élève supprimé');
     }
 
 

@@ -80,9 +80,7 @@
                                     <tr class="w-full">
                                         <td class=" flex-1 w-full items-center justify-center" colspan="4">
                                             <div>
-                                                <p class="flex justify-center content-center p-4"> <img
-                                                        src="{{ asset('storage/empty.svg') }}" alt=""
-                                                        class="w-20 h-20">
+                                                <p class="flex justify-center content-center p-4"> 
                                                 <div>Aucun élément trouvé!</div>
                                                 </p>
                                             </div>

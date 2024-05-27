@@ -47,11 +47,11 @@
                                     <tr class="border-b-2 border-gray-100" style="vertical-align:middle">
                                         <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->id }}</td>
                                         <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->code }}</td>
-                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->libelle }}
-                                        </td>
-                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">
+                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->libelle }}</td>
+                                        <td class="text-sm font-medium text-gray-900 px-6 py-6">{{ $item->scolarite }} DH</td>
+                                        {{-- <td class="text-sm font-medium text-gray-900 px-6 py-6">
                                             {{ $this->getScolaritieAmount($item->id) }}
-                                        </td>
+                                        </td> --}}
                                         <td class="flex items-center justify-center" style="vertical-align:middle">
                                             <a href="{{ route('settings.edit_level', $item->id) }}"
                                                 class="text-sm bg-blue-500 p-1 text-white rounded-sm">Modifier</a>

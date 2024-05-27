@@ -32,7 +32,7 @@
 
                 @forelse ($studentsLastPayment as $payment)
                     <div class="shadow-sm p-2 border-b-1 mt-2 border-b-red-200 ">
-                        <span>{{ $payment->montant }} Euro /Dollar /FCFA</span>
+                        <span>{{ $payment->montant }} DH</span>
                         <span>Payé le :{{ $payment->created_at }}</span>
                     </div>
 

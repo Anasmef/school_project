@@ -44,7 +44,7 @@ class CreateParent extends Component
         } catch (Exception $e) {
             //Sera pris en compte si on a un problème
 
-            dd($e);
+            // dd($e);
         }
     }
 

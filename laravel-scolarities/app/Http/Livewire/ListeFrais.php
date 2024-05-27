@@ -36,3 +36,4 @@ class ListeFrais extends Component
         return view('livewire.liste-frais', compact('fees'));
     }
 }
+  
